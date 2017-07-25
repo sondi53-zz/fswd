@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Drag & Drop</title>
+	<style type="text/css">
+		#box{
+			width: 300px;
+			height: 250px;
+			padding: 10;
+			border: 1px solid grey;
+		}
+	</style>
+
+	<script type="text/javascript">
+	function allowDrop(ev){
+		ev.preventDefault();
+	}
+
+	function drag(ev){
+		ev.dataTransfer.setData("text", ev.target.id);
+	}
+
+	function drop(ev){
+		ev.preventDefault();
+		var data = ev.dataTransfer.getData("text");
+		ev.target.appendChild(document.getElementById(data));
+	}
+	</script>
+</head>
+<body>
+	<div id="box" ondrop="drop(event)" ondragover="allowDrop(event)">
+	
+	</div>
+
+	<img id="drag1" src="logo.png" draggable="true" ondragstart="drag(event)" width="246" height="205">
+
+	<h1 contenteditable="true">Editable</h1>
+</body>
+</html>

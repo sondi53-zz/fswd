@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Canvas</title>
+    <style>
+        #myCanvas{
+            border: 1px #000 solid;
+            background: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="myCanvas" width="300" height="300"></canvas>
+    
+    <script>
+        var c = document.getElementById('myCanvas');
+        var ctx = c.getContext('2d');
+        
+        // Create REctangle
+        /*ctx.fillStyle='red';
+        ctx.fillRect(50,50,200,200);*/
+        
+        
+        //Create Line
+        /*ctx.moveTo(0,0);
+        ctx.lineTo(150,150);
+        ctx.lineTo(0,150);
+        ctx.stroke();*/
+        
+        //Circle
+        /*ctx.beginPath();
+        ctx.arc(150,150,60,0,2*Math.PI);
+        ctx.fillStyle='blue';
+        ctx.fill();
+        ctx.lineWidth='4';
+        ctx.strokeStyle='red';
+        ctx.stroke();*/
+        
+        //Text
+        /*ctx.font = '50px Arial';
+        ctx.strokeStyle = 'red';
+        ctx.strokeText('Yeah', 10, 100);*/
+        
+        //Gradient
+        var grd = ctx.createLinearGradient(0,0,100,0);
+        grd.addColorStop(0, 'black');
+        grd.addColorStop(1, 'yellow');
+        ctx.fillStyle = grd;
+        ctx.fillRect(0,0,200,200);
+    </script>
+</body>
+</html>

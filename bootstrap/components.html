@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Components</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+<style>
+  .icon-lg {
+    font-size: 40px;
+  }
+</style>
+
+</head>
+<body>
+  <div class="container">
+
+    <h3>Buttons</h3>
+    <button class="btn btn-default">Button</button>
+    <button class="btn btn-default" type="button">Button</button>
+    <button class="btn btn-default" type="submit">Button</button>
+    <button class="btn btn-default" href="#">Button</button>
+    <br><br>
+    <table class="table">
+      <tr>
+        <td>Default & Large</td>
+        <td><button class="btn btn-default btn-lg">Button</button></td>
+      </tr>
+      <tr>
+        <td>Success & Small</td>
+        <td><button class="btn btn-success btn-sm">Button</button></td>
+      </tr>
+      <tr>
+        <td>Info & XSmall</td>
+        <td><button class="btn btn-info btn-xs">Button</button></td>
+      </tr>
+      <tr>
+        <td>Warning</td>
+        <td><button class="btn btn-warning">Button</button></td>
+      </tr>
+      <tr>
+        <td>Warning</td>
+        <td><button class="btn btn-danger">Button</button></td>
+      </tr>
+      <tr>
+        <td>Primary</td>
+        <td><button class="btn btn-primary">Button</button></td>
+      </tr>
+      <tr>
+        <td>Link</td>
+        <td><button class="btn btn-link">Button</button></td>
+      </tr>
+      
+    </table>
+    <br><br>
+    <h3>Button Group</h3>
+    <div class="btn-group">
+      <button class="btn btn-default btn-lg">Left</button>
+      <button class="btn btn-default btn-lg">Middle</button>
+      <button class="btn btn-default btn-lg">Right</button>
+    </div>
+
+    <br><br>
+    <h3>Glypicons</h3>
+    <span class="glyphicon glyphicon-bed icon-lg"></span>
+    <button class="btn btn-default btn-lg"><span class="glyphicon glyphicon-bed"></span>Bed</button>
+    
+    <br><br>
+    <h3>Breadcrumb</h3>
+    <ul class="breadcrumb">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Category</a></li>
+      <li><a href="#" class="active">Technology</a></li>
+    </ul>
+
+    <br><br>
+    <h3>Pagination</h3>
+    <nav aria-label="Page navigation">
+      <ul class="pagination">
+        <li>
+          <a href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li>
+          <a href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <br><br>
+    <h3>Labels</h3>
+    <span class="label label-default">Default</span>
+    <span class="label label-success">Success</span>
+    <span class="label label-warning">Warning</span>
+    <span class="label label-info">Info</span>
+    <span class="label label-danger">Danger</span>
+    <span class="label label-primary">Primary</span>
+
+    <br><br>
+    <h3>Badges</h3>
+    <a href="#">Inbox <span class="badge">50</span></a>
+
+    <br><br>
+    <ul class="list-group">
+        <li class="list-group-item">List Item</li>
+        <li class="list-group-item">List Item</li>
+        <li class="list-group-item">List Item</li>
+        <li class="list-group-item">List Item</li>
+    </ul>
+
+  <div class="list-group">
+    <a href="#" class="list-group-item active">List Item</a>
+    <a href="#" class="list-group-item list-group-item-danger">List Item</a>
+    <a href="#" class="list-group-item list-group-item-success">List Item</a>
+    <a href="#" class="list-group-item list-group-item-warning">List Item</a>
+  </div>
+
+  <ul class="list-group">
+    <li class="list-group-item">
+      <span class="badge">14</span>
+      Cras justo odio
+    </li>
+  </ul>
+
+  <br><br>
+  <h3>Panels</h3>
+  <div class="panel panel-default">
+  <div class="panel-heading">Panel heading without title</div>
+    <div class="panel-body">
+      Panel content
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">Panel title</h3>
+    </div>
+    <div class="panel-body">
+      Panel content
+    </div>
+  </div>
+
+  <h3>Alerts</h3>
+  <div class="alert alert-success">This is an alert!</div>
+  <div class="alert alert-warning">This is an alert!</div>
+  <div class="alert alert-danger">This is an alert!</div>
+  <div class="alert alert-info">This is an alert!</div>
+
+  <h3>Progress Bars</h3>
+  <div class="progress">
+    <div class="progress-bar" style="width: 50%"></div>
+  </div>
+  <div class="progress">
+    <div class="progress-bar" style="width: 60%">60%</div>
+  </div>
+  <div class="progress">
+    <div class="progress-bar progress-bar-success" style="width: 70%">70%</div>
+  </div>
+  <div class="progress">
+    <div class="progress-bar progress-bar-success progress-bar-striped" style="width: 80%">80%</div>
+  </div>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>

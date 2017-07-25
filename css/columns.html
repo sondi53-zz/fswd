@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Columns & Flexbox</title>
+    <style>
+        article{
+            column-count: 3;
+            column-gap: 40px;
+            /*column-rule-style: solid;
+            column-rule-width: 1px;
+            column-rule-color: red;*/
+            column-rule: solid 1px red;
+        }
+        article h1{
+            column-span: all;
+        }
+
+        .textbox1 {
+            border: 2px solid black;
+            padding: 20px;
+            width: 300px;
+            overflow: auto;
+            resize:both;
+        }
+
+        .textbox2{
+            margin: 20px;
+            padding: 10px;
+            width: 300px;
+            height: 100px;
+            border: 1px solid black;
+            outline: 1px solid red;
+            outline-offset: 10px;
+        }
+
+        .flex-container{
+            display: flex;
+            /*flex-direction: column;*/
+            justify-content: space-around;
+            width: 400px;
+            height: 250px;
+            background-color: black;
+        }
+
+        .flex-item{
+            background-color: lightblue;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+        }
+
+        .first{
+            order: -1;
+        }
+    </style>
+</head>
+<body>
+    <article>
+       <h1>Title</h1>
+       Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+       nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+       erat, sed diam voluptua. At vero eos et accusam et justo duo
+       dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+       sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, 
+       consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+       ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+       eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+       gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.    
+    </article> 
+
+    <br>
+
+    <div class="textbox1">
+        Try and resize this element!
+    </div>
+
+    <div class="textbox2">
+        Try OUTLINE 10px
+    </div>
+
+    <br>
+
+    <div class="flex-container">
+        <div class="flex-item">flex item 1</div>
+        <div class="flex-item first">flex item 2</div>
+        <div class="flex-item">flex item 3</div>
+    </div>
+</body>
+</html>
